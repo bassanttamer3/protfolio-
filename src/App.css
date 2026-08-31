@@ -225,16 +225,6 @@ body {
   border-radius: 6px;
 }
 
-/* Footer */
-.portfolio-footer {
-  text-align: center;
-  border-top: 1px solid #f1f5f9;
-  padding-top: 20px;
-  margin-top: 30px;
-  color: #94a3b8;
-  font-size: 0.85rem;
-}
-
 @media (max-width: 650px) {
   .portfolio-container {
     margin: 10px;
