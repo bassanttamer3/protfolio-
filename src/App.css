@@ -1,38 +1,246 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #f1f5f9;
+  color: #0f172a;
+  margin: 0;
+  padding: 0;
+  direction: ltr;
+  line-height: 1.6;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.portfolio-container {
+  max-width: 780px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Header Styling */
+.portfolio-header {
+  border-bottom: 2px solid #f1f5f9;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+}
+
+.portfolio-header h1 {
+  margin: 0;
+  font-size: 2.3rem;
+  color: #0f172a;
+}
+
+.subtitle {
+  font-size: 1.15rem;
+  color: #2563eb;
+  font-weight: 600;
+  margin: 5px 0 15px 0;
+}
+
+.contact-info {
   display: flex;
-  flex-direction: column;
+  gap: 15px;
+  font-size: 0.9rem;
+  color: #64748b;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.contact-links {
+  display: flex;
+  gap: 10px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 0.95rem;
 }
 
-.App-link {
-  color: #61dafb;
+.contact-links a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.contact-links a:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
+.portfolio-section {
+  margin-bottom: 30px;
+}
+
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 8px;
+  margin-bottom: 18px;
+}
+
+.section-title h2, .portfolio-section h2 {
+  font-size: 1.25rem;
+  margin: 0;
+  color: #0f172a;
+}
+
+.grade-tag {
+  background: #eff6ff;
+  color: #1d4ed8;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+/* ROVEX Hero Card */
+.project-hero-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.project-header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #1e293b;
+}
+
+.project-tagline {
+  margin: 4px 0 12px 0;
+  font-size: 0.9rem;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.project-summary {
+  font-size: 0.95rem;
+  color: #334155;
+  margin-bottom: 15px;
+}
+
+.role-highlights h4 {
+  margin: 0 0 8px 0;
+  font-size: 0.95rem;
+  color: #0f172a;
+}
+
+.role-highlights ul {
+  margin: 0 0 20px 0;
+  padding-left: 20px;
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+.role-highlights li {
+  margin-bottom: 6px;
+}
+
+.project-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8;
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  color: #334155;
+  border: 1px solid #cbd5e1;
+}
+
+.btn-secondary:hover {
+  background-color: #f1f5f9;
+}
+
+/* Grid Layout */
+.grid-two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.info-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  padding: 16px;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.info-card h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: #1e293b;
+}
+
+.institution {
+  margin: 4px 0;
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.highlight-text {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #16a34a;
+  font-weight: 600;
+}
+
+/* Tech Badges */
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech-tags span {
+  background: #f1f5f9;
+  color: #334155;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+/* Footer */
+.portfolio-footer {
+  text-align: center;
+  border-top: 1px solid #f1f5f9;
+  padding-top: 20px;
+  margin-top: 30px;
+  color: #94a3b8;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 650px) {
+  .portfolio-container {
+    margin: 10px;
+    padding: 20px;
   }
-  to {
-    transform: rotate(360deg);
+  .grid-two-columns {
+    grid-template-columns: 1fr;
   }
 }
